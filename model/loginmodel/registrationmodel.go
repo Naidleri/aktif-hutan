@@ -14,7 +14,8 @@ func NewRegistrationModel(db *sql.DB) *RegistrationModel {
 
 func (rm *RegistrationModel) RegisterUser(nama string, email string, password string, deskripsi string, kabupaten string, provinsi string) bool {
 	// Mulai transaksi
-	result, err := rm.db.Exec("INSERT INTO komunitas (Nama, Email, Password, Deskripsi, Kabupaten, Provinsi) VALUES (?, ?, ?, ?, ?, ?)")
+	result, err := rm.db.Exec("INSERT INTO komunitas (Nama, Email, Password, Deskripsi, Kabupaten, Provinsi) VALUES (?, ?, ?, ?, ?, ?)",
+		nama, email, password, deskripsi, kabupaten, provinsi)
 
 	if err != nil {
 		panic(err)
