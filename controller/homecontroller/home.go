@@ -27,7 +27,7 @@ func Home(w http.ResponseWriter, r *http.Request) {
 		}
 
 		// Eksekusi template dengan data
-		temp, err := template.ParseFiles("view/home/homepage.html")
+		temp, err := template.ParseFiles("view/home/homepagenodb.html")
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 			return
