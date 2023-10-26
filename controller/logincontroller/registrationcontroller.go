@@ -24,10 +24,10 @@ func Registration(w http.ResponseWriter, r *http.Request) {
 		kabupaten := r.FormValue("kabupaten")
 		provinsi := r.FormValue("provinsi")
 
-		db, err := config.ConnectDb() // Mencoba menghubungkan ke database
+		db := config.ConnectDb() // Mencoba menghubungkan ke database
 
-		if err != nil {
-			http.Error(w, err.Error(), http.StatusInternalServerError)
+		if db == nil {
+			http.Error(w, "Gagal menghubungkan ke database", http.StatusInternalServerError)
 			return
 		}
 
