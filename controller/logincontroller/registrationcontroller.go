@@ -35,7 +35,7 @@ func Registration(w http.ResponseWriter, r *http.Request) {
 		success := model.RegisterUser(nama, email, password, deskripsi, kabupaten, provinsi)
 
 		if success {
-			http.Redirect(w, r, "/", http.StatusSeeOther)
+			http.Redirect(w, r, "/login", http.StatusSeeOther)
 		} else {
 			http.Error(w, "Gagal membuat akun", http.StatusInternalServerError)
 		}
