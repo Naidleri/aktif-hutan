@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Profile</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="edit-profile-container">
+        <!-- Tambahkan tombol pilihan di sini -->
+        <div class="profile-buttons">
+          <button class="page-button">Page 1</button>
+          <button class="page-button">Page 2</button>
+        </div>
+        <!-- Akhir tambahan tombol pilihan -->
+        <div class="edit-profile-picture">
+          <img src="profile-image.jpg" alt="Profile Picture" />
+        </div>
+      </div>
+      <h2>Data Profil</h2>
+      <form>
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="province">Province:</label>
+        <select id="province" name="province">
+          <option value="province1">Province 1</option>
+          <option value="province2">Province 2</option>
+          <!-- Tambahkan daftar provinsi lainnya sesuai kebutuhan -->
+        </select>
+
+        <label for="city">Kota/Kabupaten:</label>
+        <input type="text" id="city" name="city" />
+
+        <label for="description">Deskripsi:</label>
+        <textarea
+          id="description"
+          name="description"
+          class="plain-text"
+        ></textarea>
+
+        <input type="submit" value="Save" />
+      </form>
+    </div>
+  </body>
+</html>

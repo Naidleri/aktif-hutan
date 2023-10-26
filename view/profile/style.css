@@ -1,0 +1,85 @@
+/* CSS yang telah ada tetap ada */
+
+/* Tambahkan CSS untuk tombol pilihan */
+.profile-buttons {
+  text-align: center; /* Mengatur teks tombol ke tengah */
+  padding: 20px 0; /* Padding atas dan bawah */
+}
+
+.page-button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.page-button:hover {
+  background-color: #2582af;
+}
+/* Akhir tambahan CSS tombol pilihan */
+
+textarea.plain-text {
+  border: none;
+  padding: 0;
+  background: none;
+  resize: none;
+  overflow: hidden;
+  color: #333;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+/* CSS yang telah ada tetap ada */
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #6c757d;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #6c757d;
+}
+
+input,
+select,
+textarea {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  color: #6c757d;
+}
+
+input[type="submit"] {
+  background-color: #11e37e;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  color: #fff;
+}
+.form-container {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto; /* Margin top dan bottom untuk mengatur ke tengah */
+  text-align: left;
+  max-width: 900px; /* Max-width untuk menghindari kontainer terlalu lebar */
+  box-shadow: 0px 0px 38px rgba(0, 0, 0, 0.05);
+  color: #6c757d;
+}
