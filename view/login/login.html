@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aktif Hutan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex items-center justify-center h-screen">
+    <div
+      class="container shadow-lg rounded w-[653px] h-[596px] flex flex-col items-center justify-center"
+    >
+      <div class="relative flex flex-col items-center justify-center bottom-8">
+        <p
+          class="text-neutral-800 text-2xl font-bold font-['Montserrat'] leading-[28.80px]"
+        >
+          Login
+        </p>
+        <form action="/login" method="post">
+          <div class="w-64 mx-auto mt-8">
+            <label
+              for="email"
+              class="block text-gray-700 text-sm font-bold mb-2"
+              >Email</label
+            >
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              class="border rounded py-2 px-3 w-full text-gray-700"
+            />
+          </div>
+
+          <div class="w-64 mx-auto mt-4">
+            <label
+              for="password"
+              class="block text-gray-700 text-sm font-bold mb-2"
+              >Password</label
+            >
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              class="border rounded py-2 px-3 w-full text-gray-700"
+            />
+          </div>
+          <input
+            class="w-64 h-[34px] bg-green-800 rounded-[5px] text-white mt-4"
+            type="submit"
+            value="Login"
+          />
+        </form>
+        <a
+          class="text-green-800 text-xs font-medium font-['Montserrat'] leading-[18px] tracking-tight mt-4"
+          href="/register"
+          >Belum mempunyai akun?</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
